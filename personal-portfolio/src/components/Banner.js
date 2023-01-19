@@ -57,6 +57,7 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  
 
   return (
     <section className="banner" id="home">
@@ -74,8 +75,11 @@ export const Banner = () => {
                 <h4><span className="txt-rotate" dataPeriod="10" data-rotate='[ "Final Year Undergrad", "SDE intern @ SolarLabs"]'><span className="wrap">{text}</span></span></h4>
                   <p>Being a technology enthusiast, I have been exploring the fields of computer science.A highly innovative and curious individual with good communication skills. Passionate about learning new concept and learn things quickly. Flexible and willing to work in a growth - oriented environment.</p>
                   <div>
-                  <button onClick={initModal}>About Me <ArrowRightCircle/></button>
-                  <button style={{float:"right"}}>Download Resume <BsFillArrowDownCircleFill/></button></div>
+                    <button style={{float:"left"}} onClick={initModal}>About Me <ArrowRightCircle/></button>
+                    <a href="https://drive.google.com/drive/folders/1l_UkCjCtWTsdxv-B2BJuVxoxnjl8UmVM?usp=sharing" target="_blank">
+                      <button style={{float:"right"}}>Resume <BsFillArrowDownCircleFill/></button>
+                    </a>
+                  </div>
                   
 
                   <Modal show={isShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
@@ -88,6 +92,7 @@ export const Banner = () => {
                         <div><b>Educational Qualification</b> : BE-CSE(Final year student)</div><br></br>
                         <div><b>Institute</b> : Thapar Institute of Engineering and Technology</div><br></br>
                         <div><b>Graduation year</b> : 2023 </div><br></br>
+                        <div><b>Current CGPA</b> : 9.29 </div><br></br>
                         <div><b>E-mail</b> : snehadevrani16@gmail.com</div><br></br>
 
                         </Modal.Body>
