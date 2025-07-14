@@ -73,7 +73,9 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h2>{`Hi! I'm Sneha Devrani, `} <br></br></h2>
                 <h4><span className="txt-rotate" dataPeriod="10" data-rotate='[ "Final Year Undergrad", "SDE intern @ SolarLabs"]'><span className="wrap">{text}</span></span></h4>
-                  <p>Being a technology enthusiast, I have been exploring the fields of computer science.A highly innovative and curious individual with good communication skills. Passionate about learning new concept and learn things quickly. Flexible and willing to work in a growth - oriented environment.</p>
+                  <p>Software Engineer with expertise in React.js, Spring Boot, GraphQL, and cloud-native architectures AWS, Kubernetes. 
+Proven track record delivering scalable microservices, optimizing complex queries, and building user-focused, high
+performance applications. Recognized for leadership, mentoring, and driving Agile delivery in fast-paced environments. </p>
                   <div>
                     <button style={{float:"left"}} onClick={initModal}>About Me <ArrowRightCircle/></button>
                     <a href="https://drive.google.com/drive/folders/1l_UkCjCtWTsdxv-B2BJuVxoxnjl8UmVM?usp=sharing" target="_blank">
