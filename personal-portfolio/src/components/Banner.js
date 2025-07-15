@@ -15,7 +15,7 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(10 - Math.random() * 1000000);
   const [index, setIndex] = useState(1);
   const toRotate = [
   "Software Engineer",
@@ -80,7 +80,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h2>{`Hi! I'm Sneha Devrani, `} <br></br></h2>
                 <h4>
-                  <span className="txt-rotate" dataPeriod="10" 
+                  <span className="txt-rotate" dataPeriod="1000" 
                         data-rotate='[ "Software Engineer","Full Stack Developer","Spring Boot Specialist","React.js Developer","Cloud Native Developer"]'>
                           <span className="wrap">{text}</span>
                   </span>

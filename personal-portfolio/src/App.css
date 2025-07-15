@@ -766,3 +766,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 40px;
   backdrop-filter: blur(4px);
 }
+/* === Fix long tab text on mobile === */
+.project .nav.nav-pills .nav-link {
+  white-space: normal; /* allow wrap */
+  word-break: break-word; /* break long words if needed */
+  line-height: 1.2;
+}
+
+.project .nav.nav-pills .nav-item {
+  flex: 1 1 auto; /* allow flexible growth */
+}
+
+@media (max-width: 768px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px; 
+    padding: 10px 8px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 13px; 
+    padding: 8px 6px; 
+  }
+}

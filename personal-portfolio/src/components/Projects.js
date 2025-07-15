@@ -55,7 +55,6 @@ export const Projects = () => {
     }
   ];
 
-  // ✅ TEXT-only achievements from your resume
   const achievements = [
     "🏆 Winner of \"Re-imagining the Retail Tech\" SparkTech Challenge at Walmart among 450+ teams.",
     "🎖️ Awarded Speedster and Learning Champion badges for high performance and rapid delivery.",
@@ -71,10 +70,10 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Key highlights</h2>
-                  <p>Explore my professional experience, notable projects, and key achievements below. Hover one by one to know details...</p>
+                  <h2>Key Highlights</h2>
+                  <p>Explore my professional experience, notable projects, and key achievements below. Hover them ony by one to know more</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-wrap" id="pills-tab">
                       <Nav.Item>
                         <Nav.Link eventKey="first">Experience</Nav.Link>
                       </Nav.Item>
@@ -82,7 +81,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Achievements</Nav.Link>
+                        <Nav.Link eventKey="third">Awards</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>

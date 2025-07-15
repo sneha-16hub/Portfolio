@@ -98,8 +98,7 @@ export const Skills = () => {
       </Carousel>
       <p className="skills-counter">
         Showing {Math.min(tabIndexes[tabKey] + 1, skills.length)}
-        –{Math.min(tabIndexes[tabKey] + itemsVisible, skills.length)}
-        of {skills.length} skills
+        –{Math.min(tabIndexes[tabKey] + itemsVisible, skills.length)} of {skills.length} skills
       </p>
     </>
   );
