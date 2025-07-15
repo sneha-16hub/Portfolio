@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 export const InternshipCard= ({ title, description, imgUrl ,link}) => {
   return (
-    <Col size={12} sm={6} md={6}>
+    <Col size={12} sm={6} md={4}>
     <a style={{fontFamily:"arial", color:"white"}}  href={link}>
       <div className="proj-imgbx">
           <img style={{height:250}}src={imgUrl} />

@@ -616,3 +616,153 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+.about-modal .modal-body {
+  background: #121212; /* match your main background exactly */
+  color: #f5f5f5;
+  border-radius: 16px;
+  padding: 30px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
+  box-shadow: 0 0 20px rgba(170, 54, 124, 0.2); /* soft magenta shadow */
+}
+
+.about-modal .modal-title {
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  background-clip: text;             /* Standard */
+  -webkit-background-clip: text;     /* Safari/Chrome */
+  -webkit-text-fill-color: transparent;  /* Required for WebKit engines */
+  color: transparent; /* Fallback if clip fails */
+}
+
+
+.about-modal .label {
+  color: #AA367C; /* match your main gradient start */
+  font-weight: 600;
+}
+
+.about-modal .about-content {
+  display: grid;
+  row-gap: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-modal .btn {
+  border-radius: 25px;
+  padding: 10px 30px;
+  color: #fff;
+  border: 1px solid #AA367C;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-modal .btn:hover {
+  background: transparent;
+  color: #AA367C;
+  border: 1px solid #AA367C;
+}
+
+.about-modal .modal-header,
+.about-modal .modal-footer {
+  border: none;
+  background: #121212; /* match your page */
+}
+.form-status {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  max-width: 400px;
+  color: #fff;
+}
+
+.form-status.success {
+  background: linear-gradient(90deg, #4A2FBD, #6a5acd);
+  border: none;
+  color: #fff;
+}
+
+.form-status.error {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+}
+.achievement-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.achievement-list li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* Skills section headline & description */
+.skill-bx h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skill-bx p {
+  text-align: center;
+  color: #B8B8B8;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5em;
+  font-size: 17px;
+}
+
+/* Optional gradient line under heading */
+.skill-bx h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Tabs area improvements */
+.custom-skill-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-skill-tabs .nav-link {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.05);
+  border-radius: 50px;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.custom-skill-tabs .nav-link.active {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  border: none;
+}
+
+.custom-skill-tabs .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+/* Optional subtle shadow for whole box */
+.skill-bx {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 30px;
+  padding: 60px 40px;
+  backdrop-filter: blur(4px);
+}

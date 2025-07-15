@@ -52,7 +52,7 @@ export const NavBar = () => {
             <span className="ms-auto">
             <span className="navbar-text" >
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/sneha-devrani-6934641b2/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.linkedin.com/in/sneha-devrani/" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/sneha-16hub/" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://leetcode.com/snehadevrani/" target="_blank"><img src={navIcon3} alt="" /></a>
               </div>

@@ -17,7 +17,14 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [  "Final Year Undergraduate", "SDE intern @SolarLabs" ];
+  const toRotate = [
+  "Software Engineer",
+  "Full Stack Developer",
+  "Spring Boot Specialist",
+  "React.js Developer",
+  "Cloud Native Developer"
+  ];
+
   const period = 2000;
   const [isShow, invokeModal] = useState(false)
 
@@ -72,10 +79,19 @@ export const Banner = () => {
           </Col>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h2>{`Hi! I'm Sneha Devrani, `} <br></br></h2>
-                <h4><span className="txt-rotate" dataPeriod="10" data-rotate='[ "Final Year Undergrad", "SDE intern @ SolarLabs"]'><span className="wrap">{text}</span></span></h4>
-                  <p>Software Engineer with expertise in React.js, Spring Boot, GraphQL, and cloud-native architectures AWS, Kubernetes. 
-Proven track record delivering scalable microservices, optimizing complex queries, and building user-focused, high
-performance applications. Recognized for leadership, mentoring, and driving Agile delivery in fast-paced environments. </p>
+                <h4>
+                  <span className="txt-rotate" dataPeriod="10" 
+                        data-rotate='[ "Software Engineer","Full Stack Developer","Spring Boot Specialist","React.js Developer","Cloud Native Developer"]'>
+                          <span className="wrap">{text}</span>
+                  </span>
+                </h4>
+                  <p>
+                    Software Engineer with 2 years of experience designing and developing scalable full-stack applications and microservices using Java, Spring Boot, React.js, and GraphQL. Skilled in performance testing, API development, and cloud-native architectures with Docker, Kubernetes, and AWS. Proven experience delivering reliable, high-performance solutions at Walmart Global Tech, ARKA Energy, and Optum, with a focus on Agile development and clean, maintainable code.
+                  </p>
+                  <p>
+                    I’m currently open to new opportunities where I can contribute my skills and grow as a software engineer. Explore this portfolio to learn more about my work, skills, and achievements.
+                  </p>
+
                   <div>
                     <button style={{float:"left"}} onClick={initModal}>About Me <ArrowRightCircle/></button>
                     <a href="https://drive.google.com/drive/folders/1l_UkCjCtWTsdxv-B2BJuVxoxnjl8UmVM?usp=sharing" target="_blank">
@@ -84,29 +100,42 @@ performance applications. Recognized for leadership, mentoring, and driving Agil
                   </div>
                   
 
-                  <Modal show={isShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-                        <Modal.Header closeButton onClick={initModal}>
-                        <Modal.Title style={{fontFamily:"Sans-serif", color:"black"}} ><b>Wanna Know me More...</b></Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body style={{fontFamily:"Sans-serif", color:"black", textAlign:"center"}}>    
-                        <div><b>Name</b> : Sneha Devrani</div><br></br>
-                        <div><b>Age</b> : 21</div><br></br>
-                        <div><b>Educational Qualification</b> : BE-CSE(Final year student)</div><br></br>
-                        <div><b>Institute</b> : Thapar Institute of Engineering and Technology</div><br></br>
-                        <div><b>Graduation year</b> : 2023 </div><br></br>
-                        <div><b>Current CGPA</b> : 9.29 </div><br></br>
-                        <div><b>E-mail</b> : snehadevrani16@gmail.com</div><br></br>
+                  <Modal
+                      show={isShow}
+                      size="lg"
+                      aria-labelledby="contained-modal-title-vcenter"
+                      centered
+                      className="about-modal"
+                    >
+                      <Modal.Header closeButton onClick={initModal}>
+                        <Modal.Title>
+                          <b>Want to Know Me More?</b>
+                        </Modal.Title>
+                      </Modal.Header>
 
-                        </Modal.Body>
-                        <Modal.Footer>
-                        <Button variant="outlined" className="btn btn-outline-danger mb-3 px-5" onClick={initModal} >
-                            Close
+                      <Modal.Body>
+                        <div className="about-content">
+                          <div><span className="label">Name:</span> Sneha Devrani</div>
+                          <div><span className="label">Role:</span> Software Engineer</div>
+                          <div><span className="label">Education:</span> B.E. in Computer Science and Engineering</div>
+                          <div><span className="label">Institute:</span> Thapar Institute of Engineering and Technology</div>
+                          <div><span className="label">Graduation Year:</span> 2023</div>
+                          <div><span className="label">Based in:</span> Bengaluru, India</div>
+                          <div><span className="label">Email:</span> snehadevrani16@gmail.com</div>
+                        </div>
+                      </Modal.Body>
+
+                      <Modal.Footer>
+                        <Button
+                          variant="outlined"
+                          className="btn btn-outline-danger mb-3 px-5"
+                          onClick={initModal}
+                        >
+                          Close
                         </Button>
-                        
-                        
-                        </Modal.Footer>
+                      </Modal.Footer>
                     </Modal>
-                    
+
                     
               </div>}
             </TrackVisibility>
