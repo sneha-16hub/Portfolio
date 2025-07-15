@@ -75,7 +75,7 @@ export const Projects = () => {
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-wrap" id="pills-tab">
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Experience</Nav.Link>
+                        <Nav.Link eventKey="first">Roles</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="second">Projects</Nav.Link>
